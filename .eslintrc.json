@@ -57,6 +57,6 @@
     },
     "ignorePatterns": [
         "vendor/*",
-        "public/fonts/app"
+        "public/"
     ]
 }

@@ -28,6 +28,6 @@
         "prettier-plugin-tailwindcss": "^0.5.12",
         "sass": "^1.71.1",
         "vue-i18n": "^9.10.1",
-        "vue-toastification": "^1.7.14"
+        "vue-toastification": "^2.0.0-rc.5"
     }
 }
