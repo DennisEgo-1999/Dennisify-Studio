@@ -48,8 +48,6 @@ createInertiaApp({
             warnHtmlMessage: false
         });
 
-        console.log(props.initialPage.props.locales.find((locale) => locale.is_current)?.code)
-
         return createApp({
             created() {
                 router.on('invalid', (event) => {

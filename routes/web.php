@@ -18,13 +18,3 @@ use Inertia\Inertia;
 Route::get('/', HomeController::class)->name('home');
 
 Route::fallback(fn() => Inertia::render('Errors/404'));
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
-});
