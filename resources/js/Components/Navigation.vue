@@ -15,6 +15,7 @@ import NavLink from '@/Components/NavLink.vue';
                     :key="'responsive-menu-item-' + index"
                     :href="item.href"
                     :active="item.current"
+                    :as="item.as"
                 >
                     {{ item.label }}
                 </NavLink>

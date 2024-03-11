@@ -37,6 +37,7 @@ class NavigationMiddleware
                 'href' => '/admin',
                 'label' => trans('spa.pages.dashboard.label'),
                 'active' => !!$user && $user->can('access-dashboard'),
+                'as' => 'a'
             ],
             'profile' => [
                 'href' => route('profile.show'),
