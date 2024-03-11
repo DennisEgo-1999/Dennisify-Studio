@@ -2,10 +2,11 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
-export default defineConfig({
+const config = {
     plugins: [
         laravel({
             input: 'resources/js/app.js',
+            ssr: 'resources/js/ssr.js',
             refresh: true
         }),
         vue({
@@ -22,4 +23,6 @@ export default defineConfig({
             '@': '/resources/js'
         }
     }
-});
+};
+
+export default defineConfig(config);
